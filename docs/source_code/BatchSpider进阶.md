@@ -103,7 +103,7 @@ def crawl_detail(args):
         task_keys=["id", "item_id"],  # 需要获取任务表里的字段名，可添加多个
         redis_key="feapder:detail",  # redis中存放request等信息的根key
         task_state="state",  # mysql中任务状态字段
-        related_redis_key="feapder:list:z_requsets"
+        related_redis_key="feapder:list:z_requests"
     )
 
     if args == 1:
